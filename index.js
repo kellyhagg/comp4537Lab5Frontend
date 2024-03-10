@@ -63,4 +63,8 @@ function query() {
   if (sqlQueries.includes("INSERT") || sqlQueries.includes("insert")) {
     insert()
   }
+
+  else {
+    document.getElementById("demo").innerHTML = "Invalid Query";
+  }
 }
