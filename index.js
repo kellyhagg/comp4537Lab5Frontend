@@ -1,5 +1,5 @@
 const XHR = new XMLHttpRequest()
-const ENDPOINTROOT = 'http://localhost:3000/'; // Change this to endpoint
+const ENDPOINTROOT = 'https://leaf-special-network.glitch.me/';
 const QUERY = "INSERT INTO patients(name, dateOfBirth) VALUES ('Sara Brown','1901-01-01'), ('Jack Ma', '1960-01-30'), ('John Smith', '1941-01-01'), ('Elon Musk', '1999-01-01')";
 
 async function post() {
