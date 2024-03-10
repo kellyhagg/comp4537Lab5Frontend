@@ -1,7 +1,9 @@
+// This file has been made with the assistance of ChatGPT-4
 const XHR = new XMLHttpRequest()
 const ENDPOINTROOT = 'https://leaf-special-network.glitch.me/';
 const QUERY = "INSERT INTO patients(name, dateOfBirth) VALUES ('Sara Brown','1901-01-01'), ('Jack Ma', '1960-01-30'), ('John Smith', '1941-01-01'), ('Elon Musk', '1999-01-01')";
 
+// Insert the data into the database
 async function post() {
   XHR.open("POST", ENDPOINTROOT + "lab5/insert", true)
   XHR.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
@@ -17,6 +19,7 @@ async function post() {
   }
 }
 
+// Get the data from the database
 async function get() {
   const sqlQueries = document.getElementById('sqlQuery').value
   XHR.open("GET", ENDPOINTROOT + `lab5/select/${sqlQueries}`, true)
@@ -35,6 +38,7 @@ async function get() {
   }
 }
 
+// Insert the data into the database
 async function insert() {
   const sqlQueries = document.getElementById('sqlQuery').value
   XHR.open("POST", ENDPOINTROOT + "lab5/insert", true)
@@ -54,6 +58,7 @@ async function insert() {
   }
 }
 
+// Query the database
 function query() {
   const sqlQueries = document.getElementById('sqlQuery').value.toString()
   if (sqlQueries.includes("SELECT") || sqlQueries.includes("select")) {

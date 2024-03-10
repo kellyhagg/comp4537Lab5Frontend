@@ -1,3 +1,5 @@
+/* This file has been made with the assistance of ChatGPT-4 */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -26,7 +28,8 @@ textarea {
   resize: none;
 }
 
-#demo, #table {
+#demo,
+#table {
   margin: 20px;
   padding: 10px;
   border: 1px solid #ccc;
